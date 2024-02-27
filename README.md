@@ -24,6 +24,14 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 next build
 ```
 
+## Tests
+
+To run tests
+
+```bash
+npm run test
+```
+
 This will output the dir "out" which will contain the files needed to host :)
 
 ## Learn More
