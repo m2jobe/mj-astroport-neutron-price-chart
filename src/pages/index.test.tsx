@@ -1,7 +1,7 @@
 // index.test.tsx
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
-import Home, { getStaticProps } from "../pages/index"; // Adjust the path as needed
+import Home from "./index.page"; // Adjust the path as needed
 import { PriceData } from "@/types/apiTypes";
 import { fetchPriceData } from "@/services/api/priceApi";
 import { PriceDataStatistics } from "@/types/appTypes";
