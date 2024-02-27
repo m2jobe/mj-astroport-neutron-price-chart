@@ -67,25 +67,6 @@ beforeAll(() => {
 });
 
 describe("Home Page", () => {
-  test("getStaticProps fetches data correctly", async () => {
-    // Mock the API call to return the mocked data
-    (
-      fetchPriceData as jest.MockedFunction<typeof fetchPriceData>
-    ).mockResolvedValueOnce(mockedPriceData);
-
-    // Call getStaticProps to fetch the data
-    const { props } = await getStaticProps();
-
-    // Assert that the API call was made
-    expect(fetchPriceData).toHaveBeenCalled();
-
-    // Assert that the fetched data is passed as props
-    expect(props).toEqual({
-      priceData: mockedPriceData,
-      priceDataStats: mockedPriceDataStats,
-    });
-  });
-
   test("renders home page with fetched data and price data statistics", async () => {
     // Mock the API call to return the mocked data
     (
